@@ -1,0 +1,1 @@
+{"version":3,"file":"RulesController.js","sourceRoot":"","sources":["../../../src/controllers/RulesController.ts"],"names":[],"mappings":";;;;;AAEA,gEAAkC;AAElC,MAAM,eAAe;IACV,KAAK,CAAE,GAAY,EAAE,GAAa;QACrC,OAAO,GAAG,CAAC,IAAI,CAAC,mBAAI,CAAC,CAAA;IACzB,CAAC;CACJ;AAED,kBAAe,IAAI,eAAe,CAAA"}
