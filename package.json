@@ -6,7 +6,7 @@
   "author": "zzeris <zzeris@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "concurrently \"tsc -w\" \"nodemon dist/server.js\""
+    "dev": "concurrently \"tsc -w\" \"nodemon dist/src/server.js\""
   },
   "dependencies": {
     "express": "^4.17.1"

@@ -1,9 +1,23 @@
-import express, { Application } from 'express'
-
-const app: Application = express()
+import express from 'express'
 
 import routes from './routes'
 
-app.use(routes)
+class App {
+    public express: express.Application
 
-export default app
+    public constructor () {
+        this.express = express()
+        this.middlewares()
+        this.routes()
+    }
+
+    private middlewares (): void {
+        this.express.use(express.json())
+    }
+
+    private routes () {
+        this.express.use(routes)
+    }
+}
+
+export default new App().express
