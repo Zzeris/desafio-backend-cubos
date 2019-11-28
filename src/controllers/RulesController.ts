@@ -8,4 +8,4 @@ class RulesController {
     }
 }
 
-export default new RulesController
+export default new RulesController()
