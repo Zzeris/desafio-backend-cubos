@@ -9,5 +9,5 @@ class RulesController {
         return res.json(data_json_1.default);
     }
 }
-exports.default = new RulesController;
+exports.default = new RulesController();
 //# sourceMappingURL=RulesController.js.map
