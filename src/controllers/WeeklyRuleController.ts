@@ -3,7 +3,7 @@ import { Request, Response } from 'express'
 import state from '../config/state'
 import format from '../config/formatHours'
 
-class DailyRuleController {
+class WeeklyRuleController {
     public store (req: Request, res: Response) {
         const { horaInicio, horaFim } = req.body
 
@@ -13,22 +13,22 @@ class DailyRuleController {
 
         const content = state.load()
 
-        content.diariamente = req.body
+        content.semanalmente = req.body
 
         state.save(content)
 
-        return res.send('Horário diário cadastrado com sucesso.')
+        return res.send('Horário semanal cadastrado com sucesso.')
     }
 
     public delete (req: Request, res: Response) {
         const content = state.load()
 
-        content.diariamente = {}
+        content.semanalmente = {}
 
         state.save(content)
 
-        return res.send('Horário diário excluido com sucesso.')
+        return res.send('Horário semanal excluido com sucesso.')
     }
 }
 
-export default new DailyRuleController()
+export default new WeeklyRuleController()

@@ -5,7 +5,6 @@ import format from '../config/formatHours'
 
 class DailyRuleController {
     public index (req: Request, res: Response) {
-
         const { date1, date2 } = req.params
 
         const dateOne = date1.split('-').reverse()
