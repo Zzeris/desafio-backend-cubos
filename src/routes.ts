@@ -3,6 +3,7 @@ import { Router } from 'express'
 import RulesController from './controllers/RulesController'
 import DailyRuleController from './controllers/DailyRuleController'
 import AvailableTimesController from './controllers/AvailableTimesController'
+import WeeklyRuleController from './controllers/WeeklyRuleController'
 
 const router: Router = Router()
 
@@ -10,6 +11,9 @@ router.get('/regras', RulesController.index)
 
 router.post('/regra/diariamente', DailyRuleController.store)
 router.delete('/regra/diariamente', DailyRuleController.delete)
+
+router.post('/regra/semanalmente', WeeklyRuleController.store)
+router.delete('/regra/semanalmente', WeeklyRuleController.delete)
 
 router.post('/regra/horarios-disponiveis', AvailableTimesController.store)
 router.delete('/regra/horarios-disponiveis/:date', AvailableTimesController.delete)
