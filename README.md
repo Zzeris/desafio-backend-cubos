@@ -40,4 +40,6 @@ $ yarn
 $ yarn dev
 ```
 
-Acesse http://localhost:3333 para visualizá-lo no navegador.
+### [Postman Collection](https://www.getpostman.com/collections/c8e7c6a423cc5d04102c)
+
+Acesse http://localhost:3333/regras para visualizá-lo no navegador.
