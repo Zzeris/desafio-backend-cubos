@@ -2,7 +2,7 @@
 
 ![Screenshot 1](screenshot.png)
 
-:hospital: Esta API REST foi construida utilizando NodeJS e serve para facilitar o gerenciamento de horários de uma clínica.
+:hospital: Esta API REST foi construída utilizando NodeJS e serve para facilitar o gerenciamento de horários de uma clínica.
 
 ## Executando local
 
