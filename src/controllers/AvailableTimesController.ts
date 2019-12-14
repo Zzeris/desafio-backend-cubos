@@ -15,7 +15,7 @@ class DailyRuleController {
 
         const content = state.load()
         
-        let result = content.diaEspecifico.filter((element: string) => {
+        let result = content.diaEspecifico.filter((element: any) => {
             let date = new Date(element.dia.split('-').reverse())
             return date >= start && date <= end
         });
@@ -30,7 +30,7 @@ class DailyRuleController {
 
         const content = state.load()
 
-        let result = content.diaEspecifico.filter((element: string) => element.dia === date1)
+        let result = content.diaEspecifico.filter((element: any) => element.dia === date1)
 
         if (result.length === 0) result = 'Não hà atendimento nesta data, tente outra.'
 
@@ -60,7 +60,7 @@ class DailyRuleController {
 
         const content = state.load()
 
-        const resultItem = content.diaEspecifico.filter((element: string) => element.dia === dia)
+        const resultItem = content.diaEspecifico.filter((element: any) => element.dia === dia)
 
         if (resultItem.length > 0) return res.send(`Dia ${dia} já cadastrado.`)
 
@@ -76,7 +76,7 @@ class DailyRuleController {
 
         const content = state.load()
 
-        const result = content.diaEspecifico.filter((element: string) => element.dia === date)
+        const result = content.diaEspecifico.filter((element: any) => element.dia === date)
 
         if (result.length === 0) return res.send('Dia inválido.')
 
